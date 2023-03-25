@@ -22,6 +22,6 @@ const student =(name:string, branch?:string)=> {
  
    return `${name} . ${branch}`;
 
-}
+} 
 
 console.log(student('reda'));
