@@ -8,7 +8,7 @@ console.log(showDetails('reda',22,9100));
 
 //// function default parameter 
 
-const person =(name:string = 'person', age: number)=> {
+const person =(name:string = 'person', age: number):number|string => {
 
    return `${name} . ${age}`;
 
