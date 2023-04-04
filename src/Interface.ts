@@ -6,6 +6,7 @@
  *  use with object
  *  use with function 
  *  use read only and optional operator
+ *  Reopen the interface and use cases
  * 
  */
 
@@ -50,3 +51,26 @@ console.log(user.id);
 console.log(user.sayHello());
 user.sayWelcome()
 console.log(user.getDouble(user.id));
+
+// reopen interface 
+
+// Homepage 
+interface settings {
+  theme: boolean,
+  font: string,
+}
+// articles page 
+interface settings {
+  sidebar:boolean,
+}
+// contact page 
+interface settings {
+   external?: boolean;
+
+}
+
+let userSettings: settings = {
+  theme:true,
+  font: 'Open sans',
+  sidebar:false,
+}
