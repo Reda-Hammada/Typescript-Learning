@@ -7,7 +7,7 @@
  *  use with function 
  *  use read only and optional operator
  *  Reopen the interface and use cases
- * 
+ *  Extemding an Interface 
  */
 
 interface User { 
@@ -21,10 +21,13 @@ interface User {
 
 }
 
-let user: User = {
+
+
+let user: Moderator = {
   id: 100,
   username: 'reda',
   country: 'Morocco',
+  role:'Moderator',
   sayHello(){
     return `Hello ${this.username}` 
   }, 
@@ -52,6 +55,10 @@ console.log(user.sayHello());
 user.sayWelcome()
 console.log(user.getDouble(user.id));
 
+// extend interface
+interface Moderator extends User {
+  role: string
+}
 // reopen interface 
 
 // Homepage 
