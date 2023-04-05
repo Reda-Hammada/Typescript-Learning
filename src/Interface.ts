@@ -8,6 +8,8 @@
  *  use read only and optional operator
  *  Reopen the interface and use cases
  *  Extemding an Interface 
+ *  Interface vs Type Aliases
+ *  Take a look on HTMLElement Interface 
  */
 
 interface User { 
@@ -21,22 +23,29 @@ interface User {
 
 }
 
+// extend interface
+interface Moderator extends User {
+  role: string
+}
+
 
 
 let user: Moderator = {
   id: 100,
   username: 'reda',
   country: 'Morocco',
-  role:'Moderator',
-  sayHello(){
-    return `Hello ${this.username}` 
-  }, 
-  sayWelcome(){
-    console.log(`Welcome ${this.username}`)
+  role: 'Moderator',
+  sayHello() {
+    return `Hello ${this.username}`;
   },
-  getDouble(n){
+  sayWelcome() {
+    console.log(`Welcome ${this.username}`);
+  },
+  getDouble(n) {
     return n * 2;
-  }
+  },
+ 
+  
 }
 
 console.log(user);
@@ -55,10 +64,7 @@ console.log(user.sayHello());
 user.sayWelcome()
 console.log(user.getDouble(user.id));
 
-// extend interface
-interface Moderator extends User {
-  role: string
-}
+
 // reopen interface 
 
 // Homepage 
