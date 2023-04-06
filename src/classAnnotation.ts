@@ -17,6 +17,8 @@
  *  It should remove all the annotations and the access modifiers .
  *  
  * Static members
+ * 
+ * Implement interface to class 
  *
 */
 
@@ -52,3 +54,26 @@ let userOne = new Employee('Reda',8900)
 
 console.log(userOne.userNameSalary());
 console.log(userOne.sayUserNameSalary());
+
+// Interface 
+
+interface Settings {
+    theme:boolean,
+    font?:string,
+    save():void;
+}
+
+
+class Page implements Settings{
+
+    constructor(public theme: boolean) {
+      this.theme = theme;
+      this.save();
+    }
+
+    save():void {
+        console.log(`Created ${this.theme}`)
+    } 
+}
+
+const newPage = new Page(true);
