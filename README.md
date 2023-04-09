@@ -11,6 +11,10 @@ On this repository I will be sharing what I learnt about Typescript
 - Type Assertion   
 - Readonly  
 - Union and Intersection & type alias  
+- Enum  
+- Interface   
+- Abstract class   
+
 
  
 
