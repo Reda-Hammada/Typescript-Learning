@@ -10,7 +10,6 @@ const Status = (props: statusProps) => {
 
     useEffect( ()=>{
         switch(status){
-
             case'Loading':
               setStatus('Loading');
               break;
