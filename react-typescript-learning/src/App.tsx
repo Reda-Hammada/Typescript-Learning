@@ -14,6 +14,7 @@ import Counter from './components/Counter/Counter';
 import UseRef from './components/UseRef';
 import Profile from './components/Auth/Profile';
 import Private from './components/Auth/Private';
+import List from './components/generics/List';
 
 
 function App() {
@@ -48,6 +49,15 @@ function App() {
        <Counter />
        <UseRef />
        <Private isLoggedIn={true} Component={Profile}/>
+       <List  items={['Laptop','Monitor','Keboard','Mouce']} 
+              onClick={(item)=>console.log(item)}
+              />
+        <List  items={[1,2,3,4,5,6]} 
+              onClick={(item)=>console.log(item)}
+          />
+        <List  items={peopleData} 
+              onClick={(item)=>console.log(item)}
+          />
       </header> 
     </div>
   );
