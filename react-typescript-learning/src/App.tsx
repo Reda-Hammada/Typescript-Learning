@@ -12,6 +12,8 @@ import Container from './components/Container';
 import User from './components/User/User';
 import Counter from './components/Counter/Counter';
 import UseRef from './components/UseRef';
+import Profile from './components/Auth/Profile';
+import Private from './components/Auth/Private';
 
 
 function App() {
@@ -45,6 +47,7 @@ function App() {
        <User />
        <Counter />
        <UseRef />
+       <Private isLoggedIn={true} Component={Profile}/>
       </header> 
     </div>
   );
