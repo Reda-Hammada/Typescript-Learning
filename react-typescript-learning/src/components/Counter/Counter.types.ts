@@ -3,7 +3,7 @@ export type CounterState = {
 };
 
 export type CounterAction = {
-    type:string,
+    type:'increment' | 'decrement' |'reset' | 'multiply'
     payload:number,
 }
 

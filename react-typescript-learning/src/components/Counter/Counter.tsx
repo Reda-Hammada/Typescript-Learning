@@ -1,8 +1,12 @@
 import React, {useReducer} from 'react';
 import { CounterReducer } from './CounterReducer';
+import { useEffect } from 'react';
 
 
 const Counter = () => {
+  useEffect(()=>{
+    console.log('Rendered');
+  })
   const {initialState, reducer} = CounterReducer;
   const [state, dispatch] = useReducer(reducer,initialState)
   return (
@@ -19,10 +23,16 @@ const Counter = () => {
       decrement
     </button>
     <button onClick={()=>{
+      dispatch({type:'multiply', payload:2});
+    }}>
+      Multiply
+    </button>
+    <button onClick={()=>{
       dispatch({type:'reset', payload:0});
     }}>
       Reset
     </button>
+
     
     </>
   )
