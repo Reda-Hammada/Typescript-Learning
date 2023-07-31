@@ -8,6 +8,7 @@ import Heading from './components/Heading';
 import Definition from './components/Definition';
 import Button from './components/Button';
 import Input from './components/Input';
+import Container from './components/Container';
 
 function App() {
   const peopleData = [
@@ -37,6 +38,7 @@ function App() {
        <Input 
               handleChange={(event) => console.log(event.target.value)}
                />
+       <Container style={{backgroundColor:'red',color:'blue', marginTop:'10px', marginBottom:'20px'}} />
       </header> 
     </div>
   );
