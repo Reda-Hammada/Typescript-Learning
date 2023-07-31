@@ -1,12 +1,12 @@
 import React from 'react'
 
 type ButtonProps = {
-    handleClick : () => void
+    handleClick : (event: React.MouseEvent<HTMLButtonElement>,id:Number) => void
 }
 const Button = (props:ButtonProps) => {
     const {handleClick} = props;
-    
-     return <button onClick={handleClick}>Click Me</button>
+
+     return <button onClick={(event)=>handleClick(event,23)}>Click Me</button>
 }
 
 export default Button

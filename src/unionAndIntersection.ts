@@ -11,7 +11,7 @@
 
 let variable : Number | string;
 
-variable = '5'
+variable = '5';
 variable = 5;
 
 
@@ -28,9 +28,7 @@ type B  =  A & {
 }
 
 type c = {
-
-    five: boolean,
-
+    five: boolean, 
 }
 
 type mix = A & c;
