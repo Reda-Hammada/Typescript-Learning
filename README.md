@@ -15,6 +15,12 @@ On this repository I will be sharing what I learnt about Typescript
 - Interface   
 - Abstract class   
 - React + Typescript   
+- Types with props  
+- Types with ReactNode  
+- Types with HTMLElements  
+- Types with Hooks   
+- Typed Component as Props   
+
 
 
  
