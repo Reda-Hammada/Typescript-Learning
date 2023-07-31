@@ -6,7 +6,7 @@ import People from './components/People';
 import Status from './components/Status';
 import Heading from './components/Heading';
 import Definition from './components/Definition';
-
+import Button from './components/Button';
 
 function App() {
   const peopleData = [
@@ -32,6 +32,7 @@ function App() {
           <h1>Coding is art</h1>
         </Heading>
        </Definition>
+       <Button handleClick={()=> console.log('Button is Clicked !')} />
       </header> 
     </div>
   );
